@@ -20,6 +20,8 @@ app.use((req,res,next)=>{
     res.send('<h1>welcome to express.js</h1>')
 })
 
-const server=http.createServer(app)
+//const server=http.createServer(app)
+//already createServer is written inside kisten()
+//server.listen(3000)
 
-server.listen(3000)
+app.listen(3000)
